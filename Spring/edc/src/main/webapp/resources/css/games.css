@@ -1,0 +1,21 @@
+.modal-body{
+    overflow:hidden;
+}
+.form-group{
+    width:20%;
+    float:left;
+}
+.form-control{
+     width:75%;
+}
+body{
+    background-color: white;
+}
+.text{
+    font-size:0.8rem;
+}
+#warning1{
+    font-size:0.8rem;
+    /*visibility:hidden;*/
+    color:red;
+}

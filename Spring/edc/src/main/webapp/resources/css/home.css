@@ -1,0 +1,13 @@
+.team-crest{
+    background-image: url(https://sport.guim.co.uk/football/crests/60/1006.png);
+    height: 1.375rem;
+    margin-right: 0.3125rem;
+    width: 1.375rem;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 4px;
+}
