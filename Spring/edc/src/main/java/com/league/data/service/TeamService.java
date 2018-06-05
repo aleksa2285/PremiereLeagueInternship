@@ -27,18 +27,6 @@ public class TeamService implements TeamDAO {
         this.namedJdbcOperations = namedParameterJdbcTemplate;
     }
 
-//    public List<Team> getTeams() {
-//        List<Team> teams = new ArrayList<Team>();
-//        List<Map<String, Object>> rows = jdbcOperations.queryForList("SELECT * from team");
-//        for(Map row: rows){
-//            Team team = new Team();
-//            team.setTeamID((Long)row.get("TEAM_ID"));
-//            team.setTeamName((String)row.get("TEAM_NAME"));
-//            team.setTeamProfilePicturePath((String)row.get("TEAM_PROFILE_PATH"));
-//            teams.add(team);
-//        }
-//        return teams;
-//    }
     public List<Team> getAllTeams(){
         String query = "SELECT * FROM team";
         List<Team> teams = this.namedJdbcOperations.query(query, new TeamRowMapper());

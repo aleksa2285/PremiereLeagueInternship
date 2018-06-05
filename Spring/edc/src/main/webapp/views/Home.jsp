@@ -48,19 +48,7 @@
     </tr>
     </thead>
     <tbody class="classic">
-    <%--<tr class="actual">--%>
-        <%--<th scope="row">1</th>--%>
-        <%--<td><span class="team-crest"></span>Man City</td>--%>
-        <%--<td>Games played</td>--%>
-        <%--<td>Won</td>--%>
-        <%--<td>Drawn</td>--%>
-        <%--<td>Lost</td>--%>
-        <%--<td>Goals for</td>--%>
-        <%--<td>Goals against</td>--%>
-        <%--<td>Goal difference</td>--%>
-        <%--<td>Points</td>--%>
-        <%--<td>Form</td>--%>
-    <%--</tr>--%>
+
     </tbody>
 </table>
 </body>
