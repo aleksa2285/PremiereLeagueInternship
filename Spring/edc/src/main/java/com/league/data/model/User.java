@@ -1,5 +1,8 @@
 package com.league.data.model;
 
+import java.util.Collection;
+import java.util.List;
+
 public class User {
 
     private long userID;
@@ -8,13 +11,14 @@ public class User {
     private String username;
     private String role;
     private String authenticationToken;
+    private List grantedAuthorities;
 
-    public User(String username, String password) {
+    public User(String username, String password, List grantedAuthorities) {
         this.username = username;
         this.password = password;
+        this.grantedAuthorities = grantedAuthorities;
     }
     public User(String userEmail, String password, String username, String role, String authenticationToken) {
-        this.userID = userID;
         this.userEmail = userEmail;
         this.password = password;
         this.username = username;
@@ -69,6 +73,14 @@ public class User {
     public void setAuthenticationToken(String authenticationToken) {
         this.authenticationToken = authenticationToken;
     }
+
+    public Collection getGrantedAuthorities() {
+        return grantedAuthorities;
+    }
+    public void setGrantedAuthorities(List grantedAuthorities) {
+        this.grantedAuthorities = grantedAuthorities;
+    }
+
     @Override
     public String toString() {
         return "User{" +

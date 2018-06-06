@@ -177,20 +177,6 @@ public class Team implements  Comparable{
                 '}';
     }
 
-//    public int compare(Team team1, Team team2) {
-//        if  (team1.getTeamPoints() == team2.getTeamPoints() && team1.getTeamGoalsFor() == team2.getTeamGoalsFor()){
-//            if (team1.getGoalDifference() > team2.getGoalDifference()) return -1;
-//            else if(team2.getGoalDifference() > team1.getGoalDifference() ) return 1;
-//            else return 0;
-//        }
-//        else if(team1.getTeamPoints() == team2.getTeamPoints()){
-//           if  (team1.getTeamGoalsFor() > team2.getTeamGoalsFor()) return -1;
-//           else if(team2.getTeamGoalsFor() > team1.getTeamGoalsFor()) return 1;
-//           else return 0;
-//       }
-//        else return 0;
-//    }
-//
     public int compareTo(Object team2) {
         Team team2nd = (Team) team2;
         if  (this.getTeamPoints() == team2nd.getTeamPoints() && this.getTeamGoalsFor() == team2nd.getTeamGoalsFor()){
