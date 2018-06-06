@@ -156,6 +156,7 @@
       <Position>2</Position>
       <DataType>varchar(1024)|0</DataType>
       <NotNull>1</NotNull>
+      <DefaultExpression>&apos;nomail@nomail.com&apos;</DefaultExpression>
     </column>
     <column id="51" parent="22" name="USER_PASSWORD">
       <Position>3</Position>
